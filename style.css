@@ -29,23 +29,11 @@
   color: white;
 }
 
+
 body{
     background-color: #383838;
     margin: 0px;
 }
-
-.flex-container {
-  display: flex;
-}
-
-.flex-child {
-  flex: 1;
-  border: 2px solid yellow;
-}  
-
-.flex-child:first-child {
-  margin-right: 20px;
-} 
 
 .sidenav a {
   padding: 6px 6px 6px 32px;
@@ -57,6 +45,7 @@ body{
 
 .sidenav a:hover {
   background-color: #cacaca;
+  transition: 0.3s;
 }
 
 #logo img{
