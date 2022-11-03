@@ -20,6 +20,17 @@
   margin-left: -27.5px;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.flex-child-img {
+  flex: 1;
+}
+
+.flex-child-nav {
+  flex: 1;
+}
 
 .sidenav li.active a {
   background-color: black;
@@ -76,6 +87,8 @@ body {
   font-family: 'Calibri';
   font-size: 22px;
   font-weight: 200;
+  text-align: justify;
+  
 }
 
 #coachingdiv {
@@ -86,9 +99,10 @@ body {
 }
 
 #coachingdiv li {
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   font-size: 16pt;
   font-family: Georgia;
+  text-align: left;
 }
 
 #foot {
