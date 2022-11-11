@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="style.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="favicon" href="img/favicon.ico">
@@ -19,9 +20,8 @@
       <li class="trainees"><a href="#trainees">TRAINEES</a></li>
       <li class="impressum"><a href="#impressum">IMPRESSUM</a></li>
     </ul>
-
     <a id="insta_link" href="https://www.instagram.com/louis_strc/" target="_blank">
-      <img id="insta_png" src="img/insta_logo.png" , alt="Insta Logo" , width=50px, style="margin-left: -27.5px;">
+      <img id="insta_png" src="img/insta_logo.png" , alt="Insta Logo" , width=50px>
     </a>
 
 
@@ -48,8 +48,7 @@
       <div class="flex-container">
         <div class="flex-child-nav">
           <div style="height:20%;"></div>
-          <img src="img/Louis_mid.jpg" alt="Bild startseite" , style="width:50%; max-width: 250px; min-width: 200px; border-radius: 50%; margin-right: 50px; display: block;margin-left: auto;
-          margin-right: auto;">
+          <img id="portrait" src="img/Louis_mid.jpg" alt="Bild startseite">
 
         </div>
         <div class=" flex-child-green">
@@ -115,11 +114,9 @@
     <section id="trainees">
       <div>
         <h2 id="headline">TRAINEES</h2>
-        <img src="img/Sarah_Konnerth.jpg" , style="width:30%; border-radius: 50%;  display: block;margin-left: auto;
-        margin-right: auto;">
+        <img id="trainees_img" src="img/Sarah_Konnerth.jpg">
         <h3 style="text-align: center;">Sarah Konnert</h3>
-        <p
-          style="text-align: center; font-family:'Times New Roman', Times, serif; font-style: italic; font-size: 17pt;">
+        <p id ="trainees_text">
           "Louis habe ich
           2021 kennengelernt. Nachdem ich gesehen hatte, dass er auf der Deutschen
           Meisterschaft im KDK 2021 gestartet war, sind wir ins Gespräch gekommen. Ich habe zu der Zeit schon mehrere
@@ -157,23 +154,10 @@
 
   <script>
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-
-      // true for mobile device
-      document.write("mobile device");
-      document.getElementById("navbar").style.color = "blue";
-    } else {
-      // false for not mobile device
-      console.log("not mobile device");
-    }
-
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll(".sidenav li");
 
     window.onscroll = () => {
-
-
 
       var current = "";
 
