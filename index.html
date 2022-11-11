@@ -4,18 +4,21 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="favicon" href="img/favicon.ico">
 </head>
 
 <body>
 
   <div class="sidenav">
     <div id="logo"><img src="img/logo.png" alt="logo"></div>
-    <li class="home active"><a href="#home">HOME </a></li>
-    <li class="about-me"><a href="#about-me">ABOUT ME</a></li>
-    <li class="coaching"><a href="#coaching">COACHING</a></li>
-    <li class="trainees"><a href="#trainees">TRAINEES</a></li>
-    <li class="impressum"><a href="#impressum">IMPRESSUM</a></li>
+    <ul>
+      <li class="home active"><a href="#home">HOME </a></li>
+      <li class="about-me"><a href="#about-me">ABOUT ME</a></li>
+      <li class="coaching"><a href="#coaching">COACHING</a></li>
+      <li class="trainees"><a href="#trainees">TRAINEES</a></li>
+      <li class="impressum"><a href="#impressum">IMPRESSUM</a></li>
+    </ul>
 
     <a id="insta_link" href="https://www.instagram.com/louis_strc/" target="_blank">
       <img id="insta_png" src="img/insta_logo.png" , alt="Insta Logo" , width=50px, style="margin-left: -27.5px;">
@@ -177,7 +180,7 @@
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         //console.log("Y offset: ", pageYOffset, " top: ", sectionTop);
-        if (pageYOffset > sectionTop - 1) {
+        if (pageYOffset > sectionTop - 5) {
           current = section.getAttribute("id");
         }
       });

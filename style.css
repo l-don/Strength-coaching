@@ -14,10 +14,16 @@
   font-family: 'Poggers';
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  padding-left:0px;
+}
+
 .sidenav li {
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: -27.5px;
+  /*margin-left: -27.5px;*/
 }
 
 .flex-container {
@@ -44,7 +50,7 @@ body {
 }
 
 .sidenav a {
-  padding: 6px 6px 6px 32px;
+  padding: 6px 6px 6px 6px;
   text-decoration: none;
   font-size: 25px;
   color: black;
@@ -125,6 +131,6 @@ body {
 @font-face {
   font-family: 'Poggers';
   /*a name to be used later*/
-  src: 'Poggers-Bold.ttf'
+  src: url('Poggers-Bold.ttf')
 
 }
