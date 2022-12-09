@@ -108,6 +108,17 @@ body {
 
 }
 
+#main-pp {
+  margin-left: 120px;
+  margin-right: 120px;
+  color: white;
+  font-family: 'Calibri';
+  font-size: 22px;
+  font-weight: 200;
+  text-align: justify;
+
+}
+
 #coachingdiv {
   margin: auto;
   width: 60%;
@@ -149,13 +160,20 @@ body {
   }
 
   .sidenav a {
-    font-size: 11px;
+    font-size: 9px;
     margin: -15px;
   }
+
 
   #main {
     margin-left: 120px;
     /* Same as the width of the sidenav + margin*/
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  #main-pp {
+    margin-left: 20px;
     margin-right: 20px;
     font-size: 12px;
   }
