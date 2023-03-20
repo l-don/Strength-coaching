@@ -5,10 +5,10 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #314049;
   overflow-x: hidden;
   padding-top: 20px;
-  opacity: 0.75;
+  opacity: 0.9;
 
   text-align: center;
   font-family: 'Poggers';
@@ -26,6 +26,20 @@ ul {
   /*margin-left: -27.5px;*/
 }
 
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  /*font color*/
+  display: block;
+}
+
+.sidenav li.active a {
+  background-color: black;
+  color: #efb712;
+}
+
 .flex-container {
   display: flex;
 }
@@ -38,14 +52,9 @@ ul {
   flex: 1;
 }
 
-.sidenav li.active a {
-  background-color: black;
-  color: white;
-}
-
 
 body {
-  background-color: #1D2B34;
+  background-color: #1f2e36;
   margin: 0px;
 }
 
@@ -60,14 +69,7 @@ body {
   margin-right: auto;
 }
 
-.sidenav a {
-  padding: 6px 6px 6px 6px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  /*font color*/
-  display: block;
-}
+
 
 .sidenav a:hover {
   background-color: #cacaca;
@@ -89,12 +91,21 @@ body {
   width: 100%;
 }
 
+:root {
+  --outline-thickness:2px;
+}
 #headline {
   text-align: center;
   font-size: 50px;
   font-family: 'Poggers';
-  color: #B97C7D
+  color: #efb712;
+  text-shadow:
+    calc(-1 * var(--outline-thickness)) calc(-1 * var(--outline-thickness)) 0 #000000,
+    calc(1 * var(--outline-thickness)) calc(-1 * var(--outline-thickness)) 0 #000000,
+    calc(-1 * var(--outline-thickness)) calc(1 * var(--outline-thickness)) 0 #000000,
+    calc(1 * var(--outline-thickness)) calc(1 * var(--outline-thickness)) 0 #000000;
 }
+
 
 #main {
   margin-left: 370px;
