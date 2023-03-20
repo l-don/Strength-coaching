@@ -71,7 +71,7 @@ body {
 
 
 
-.sidenav a:hover {
+.sidenav a:not(#logo):hover {
   background-color: #cacaca;
   transition: 0.3s;
 }
@@ -209,6 +209,17 @@ body {
   #foot{
     margin-left: 100px;
   }
+
+  :root {
+    --outline-thickness:1px;
+  }
+
+  #insta_png{
+    size: 50%;
+  }
+
+
+
 
 
 }
